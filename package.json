@@ -1,0 +1,23 @@
+{
+  "name": "morgan",
+  "version": "1.0.0",
+  "description": "Morgan's Photography Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dragonscar/morgan.git"
+  },
+  "author": "Adam Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dragonscar/morgan/issues"
+  },
+  "homepage": "https://github.com/dragonscar/morgan#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "jade": "^1.11.0"
+  }
+}
