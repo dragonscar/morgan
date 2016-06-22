@@ -1,10 +1,10 @@
 block vars
   - pageLinks = pageLinks || [{link:"/",text:"Home"},{link:"/wedding-photography",text:"Weddings"},{link:"/photo-gallery",text:"Photo Gallery"},{link:"/photography-booking",text:"Bookings"}];
 
-mixin navLinks(pageLinks)
+mixin navLinks(data)
   ul
-    each link in pageLinks
+    each link in data
       if link.active
-        li(href!='link.link' class="active")= link.text
+        li(href!=link.link class="active")= link.text
       else
-        li(href!='link.link')= link.text
+        li(href!=link.link)= link.text

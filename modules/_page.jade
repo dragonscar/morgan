@@ -1,0 +1,15 @@
+include _nav.jade
+
+block vars
+  
+doctype html
+html
+  head
+    title SEO Title Text
+    meta(name="description" content="Photography Services")
+    meta(name="keywords" content="photography service,photographer,wedding photography,wedding,wedding photographer,photography")
+  body
+    div(class="container")
+      include _marquee.jade
+      div(id="nav")
+        +navLinks(pageLinks)
