@@ -8,8 +8,19 @@ html
     title SEO Title Text
     meta(name="description" content="Photography Services")
     meta(name="keywords" content="photography service,photographer,wedding photography,wedding,wedding photographer,photography")
+    link(rel="stylesheet" type="text/css" href="css/bootstrap.css")
+    link(rel="stylesheet" type="text/css" href="css/styles.css")
   body
     div(class="container")
       include _marquee.jade
-      div(id="nav")
-        +navLinks(pageLinks)
+      +navLinks(pageLinks)
+      block bodyContent
+
+      nav(id="footer" class="navbar navbar-default")
+        div(class="container-fluid")
+          div(class="navbar-header")
+            a(class="navbar-brand navbar-right")
+              img(src="twitter")
+            a(class="navbar-brand navbar-right")
+              img(src="facebook")
+            p(class="navbar-text navbar-left") Copyright Morgan Johnson
