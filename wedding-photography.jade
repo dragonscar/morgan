@@ -1,0 +1,10 @@
+extends modules/_page.jade
+include modules/_gallery.jade
+
+block vars
+  - pageLinks = [{link:"index.html",text:"Home"},{link:"wedding-photography.html",text:"Weddings",active:true},{link:"/photo-gallery",text:"Photo Gallery"},{link:"/photography-booking",text:"Bookings"},{link:"/blog",text:"Blog"}];
+  - marqueeImageUrl = "image.jpg";
+
+block bodyContent
+  h1 Wedding Photography
+  +gallery("wedding-photography-carousel",3)
